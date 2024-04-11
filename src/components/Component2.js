@@ -1,8 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-const Component2 = () => {
+const Component2 = ({countData}) => {
+
   return (
-    <div className='container2'>Component2</div>
+    <div className='container2'>
+      <section>
+      </section>
+      <div>
+        <h2>
+          API COUNT: {countData}
+        </h2>
+        <p>
+          1. Resizing done- react-resizable
+        </p>
+        <p>
+          2. API Count- Body parser, morgan
+        </p>
+        <p>
+          3. Tech Stack used- MERN [MongoDb, Mongoose, Express, Node, React]
+        </p>
+      </div>
+    </div>
   )
 }
 

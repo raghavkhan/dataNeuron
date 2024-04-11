@@ -21,6 +21,7 @@ const Modal = (props) => {
 
   return (
     <div className='modal'>
+      <div className="modal-content">
       <span className='close-button' onClick={props.closeModal}>
         X
       </span>
@@ -55,6 +56,7 @@ const Modal = (props) => {
 
         <button type='submit'>Add</button>
       </form>
+      </div>
     </div>
   );
 };

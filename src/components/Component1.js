@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AddData from "../services/AddData.js";
 
-const Component1 = ({setRefetch, listData}) => {
+const Component1 = ({setRefetch}) => {
   const [userId, setUserId] = useState(null);
   const [name, setName] = useState("");
   const [age, setAge] = useState(null);
@@ -16,7 +16,7 @@ const Component1 = ({setRefetch, listData}) => {
     setUserId("");
     setName("");
     setAge("");
-    setRefetch(prev=> !prev);
+    setRefetch(prev => !prev);
     // setFormData((prev) => {
     //   return { ...prev, userId, name, age };
     // });

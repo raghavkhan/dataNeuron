@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
 import ListData from "../services/ListData";
-import UpdateData from "../services/UpdateData";
+// import UpdateData from "../services/UpdateData";
 import Modal from "./Modal";
 
-const Component3 = () => {
+const Component3 = ({isRefetch, setRefetch}) => {
   const [showModal, setShowModal] = useState(false);
   const [listData, setListData] = useState([]);
   const [updaterId, setUpdaterId] = useState(null);
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   const getData = async () => {
     const data = await ListData();
     console.log(data);
     setListData(data);
   };
+  useEffect(() => {
+    getData();
+  }, []);
 
   const closeModal = () => {
     setShowModal(false);
@@ -25,7 +24,7 @@ const Component3 = () => {
   const updateHandler = (id) => {
     setShowModal(true);
     setUpdaterId(id);
-
+    setRefetch(prev=> !prev);
     // await UpdateData();
   };
 
