@@ -1,0 +1,53 @@
+.container1 {
+  height: 45vh;
+  width: 22%;
+  border: 2px solid blue;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.container2 {
+  height: 45vh;
+  width: 66%;
+  border: 2px solid green;
+}
+.container3 {
+  height: 45vh;
+  width: 88%;
+  border: 2px solid orange;
+}
+.upper {
+  display: flex;
+}
+.lower {
+  display: flex;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+.form {
+  /* border: 2px solid chartreuse; */
+  margin-left: 6px;
+}
+
+.modal {
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  border: 2px solid red;
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 2.5;
+}
+table {
+  border: 2px solid black;
+  border-spacing: 10px;
+}
