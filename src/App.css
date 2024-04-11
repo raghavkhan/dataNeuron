@@ -3,14 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-.app {
+/* .app {
   border: 2px solid red;
-  height: 100vh;
+  height: 100vh; */
   /* width: 100%; */
   /* width: 900px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
   /* align-items: center; */
   /* place-items: center; */
-}
+/* } */
+/* .app .upper {
+  display: flex;
+  border:2px solid blue;
+} */
+

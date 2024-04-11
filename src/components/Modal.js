@@ -4,12 +4,12 @@ import UpdateData from "../services/UpdateData";
 const Modal = (props) => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
-  const [refetch, setRefetch] = useState(false);
+  // const [refetch, setRefetch] = useState(false);
 
   const submitHandler = async (e) => {
     e.preventDefault();
     const updatedFormData = {
-      userId: props.updaterId.toString(),
+      id: props.updaterId.toString(),
       name,
       age: Number(age),
     };

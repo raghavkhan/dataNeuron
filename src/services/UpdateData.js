@@ -1,9 +1,9 @@
 const UpdateData = async (updatedData) => {
   const body = updatedData;
-  console.log(body);
+  const {id} = body;
   try {
     const response = await fetch(
-      `https://dataneuron-2-undh.onrender.com/api/data/user`,
+      `https://dataneuron-2-undh.onrender.com/api/data/user/${id}`,
       {
         method: "PUT",
         headers: {

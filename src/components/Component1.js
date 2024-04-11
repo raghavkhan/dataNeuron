@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import AddData from "../services/AddData.js";
 
-const Component1 = () => {
+const Component1 = ({setRefetch, listData}) => {
   const [userId, setUserId] = useState(null);
   const [name, setName] = useState("");
   const [age, setAge] = useState(null);
-  // const [formData, setFormData] = useState({});
   useEffect(() => {}, []);
 
   const submitHandler = async (e) => {
@@ -17,6 +16,7 @@ const Component1 = () => {
     setUserId("");
     setName("");
     setAge("");
+    setRefetch(prev=> !prev);
     // setFormData((prev) => {
     //   return { ...prev, userId, name, age };
     // });
