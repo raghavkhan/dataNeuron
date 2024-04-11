@@ -6,7 +6,7 @@ import Modal from "./Modal";
 const Component3 = () => {
   const [showModal, setShowModal] = useState(false);
   const [listData, setListData] = useState([]);
-  const [updaterId,setUpdaterId] = useState(null); 
+  const [updaterId, setUpdaterId] = useState(null);
 
   useEffect(() => {
     getData();
@@ -25,7 +25,7 @@ const Component3 = () => {
   const updateHandler = (id) => {
     setShowModal(true);
     setUpdaterId(id);
-    
+
     // await UpdateData();
   };
 

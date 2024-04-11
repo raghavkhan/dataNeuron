@@ -8,12 +8,11 @@ const Component1 = () => {
   // const [formData, setFormData] = useState({});
   useEffect(() => {}, []);
 
-  
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log("submit handler");
     console.log(userId, name, age);
-    const formData = { userId: Number(userId), name, age: Number(age) };
+    const formData = { id: userId, name, age: Number(age) };
     await AddData(formData);
     setUserId("");
     setName("");

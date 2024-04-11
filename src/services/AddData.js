@@ -1,7 +1,7 @@
 const AddData = async (formData) => {
   const body = formData;
   try {
-    const response = await fetch("/api/data/add", {
+    const response = await fetch("https://dataneuron-2-undh.onrender.com/api/data/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
